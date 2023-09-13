@@ -1,0 +1,99 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+
+.custom-shadow {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.light-mode {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1e1e1e; /* Set the background color for dark mode */
+  color: white; /* Set text color for dark mode */
+}
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition between modes */
+}
+
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: auto; /* Move the toggle button to the right */
+  margin-right: 20px; /* Add some right margin for spacing */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px; /* Make it round */
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%; /* Make it round */
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+/* Apply the "Inter" font to the list items */
+.fontnew {
+  font-family: 'Inter', sans-serif; /* Use the "Inter" font-family */
+}
+
+
+
+.bulleted-list {
+  list-style-type: disc; /* You can use 'disc', 'circle', or 'square' for different bullet styles */
+  padding-left: 1.5rem; /* Adjust the indentation as needed */
+  
+}
